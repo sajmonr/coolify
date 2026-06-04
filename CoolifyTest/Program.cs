@@ -65,7 +65,7 @@ app.MapGet(
             {
                 status = "ok",
                 message = "Database and Redis are both reachable.",
-                postgres = new { visitCount = dbVisitCount },
+                db = new { visitCount = dbVisitCount },
                 redis = new { hitCount = redisHitCount },
             }
         );
